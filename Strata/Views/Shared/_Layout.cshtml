@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.title</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    @*@Styles.Render("~/Content/css")*@
+</head>
+<body id="top">
+    <header id="header">
+        <a href="#" class="image avatar">
+            <img src="~/Images/avatar.jpg" alt=""/>
+        </a>
+        <h1>
+            <strong>I am Strata</strong>, a super simple<br />
+            responsive site template freebie<br />
+            crafted by <a href="http://html5up.net">HTML5 UP</a>.
+        </h1>
+    </header>
+    <div id="main">
+        @RenderBody()
+    </div>
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon fa fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa fa-github"><span class="label">Github</span></a></li>
+            <li><a href="#" class="icon fa fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon fa fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Untitled</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
